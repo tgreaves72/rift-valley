@@ -1,0 +1,255 @@
+0.15.0 | October 22, 2026
+- Add optional jump/sprint/dash training, available through Goals or its lobby plate.
+- Add three UTC daily goals with fixed, server-verified one-time coin rewards.
+- Save and replay the owner's parkour personal best as a translucent local ghost.
+- Unlock the free Ascent Ace title after a valid full parkour completion.
+- Derive floor attack outlines from shared capture limits; clear canceled warnings.
+- Add published-server onboarding, progress, failure and departure analytics.
+- Preserve active lobby activities when another race reaches results.
+- Record current native multiplayer scope in deploy/multiplayer-studio-results.json.
+
+0.14.0 | October 22, 2026
+- Add 3D Mastery trophy/medals, a parkour stopwatch and death-to-plate retry.
+- Protect lobby borders while leaving parkour outer edges open.
+- Add arena-only VIP coils and an energy blaster with server hit validation.
+
+0.13.3 | October 21, 2026
+- Keep the map names with small floating labels above the three voting emblems.
+- Fix orientation for map emblems, resource icons and coins; retain gentle vertical bobbing.
+- Replace regular and shortcut crystal pickups with round, glowing native 3D coins.
+- Keep collection anchors stationary and hide a collected coin only for its collector.
+- Remove the unwanted CRACKING STONES sign from Sunset Ruins.
+- Remove the 2.5-second pursuit hold while preserving protection against instant grabs.
+- Reconcile the catcher pack in the finish heartbeat, removing the periodic spawn delay.
+- Prepare catcher paths during Get Ready to avoid the first-run pathfinding delay.
+- Verify all three full five-course Studio escapes and a walking-only capture.
+- Verify 62 catcher physics starts below 0.32 seconds and four catalog tracks loading.
+
+0.13.2 | October 21, 2026
+- Add a live Next Map sidebar with all three shared vote counts and the player's choice.
+- Show the tally during open lobby voting; hide it in races and open menus.
+- Scale the tally for phone portrait and landscape without adding voting buttons.
+- Replace map-vote signboards with glowing 3D crystal, temple and anchor emblems.
+- Float and rotate the emblems above the existing pressure plates; brighten the selected map.
+- Preserve all collision geometry, plate contact validation and multiplayer vote authority.
+- Pass six affected suites, compile 28 scripts and review native-geometry/HUD previews.
+- No new native Roblox Studio playtest performed.
+
+0.13.1 | October 21, 2026
+- Remove intermediate course medal cards and repeated course/pickup notices.
+- Keep course dots, stamina, dash cooldown, coins and Mastery progress updated.
+- Defer the Scout popup during running; its title still equips and unlocks normally.
+- Replace large finish cards with a 248-by-56 two-line medal/time badge.
+- Show badges only at practice completion or the fifth race finish; shorten display time.
+- Use smaller rounded notice capsules for important action errors and round results.
+- Verify phone portrait/landscape and desktop layouts, retry-button clearance and silent bonus transitions.
+- Recheck client, Mastery UI and native place suites; compile all 28 scripts.
+- Retain prior gameplay evidence separately. No new Roblox Studio run performed.
+
+0.13.0 | October 19, 2026
+- Replace three map-vote buttons and parkour entry with physical pressure plates.
+- Validate standing contact on the server; reject airborne and remote voting.
+- Prevent held plates from stacking votes or resetting the parkour clock.
+- Show map counts in the menu without remote vote buttons.
+- Place AI and human catchers at supported forward interception stations.
+- Hold AI stations during arrival protection; keep pursuit and dash mechanics.
+- Animate auroras, stars and floating shards with a capped local update budget.
+- Connect four APMOfficial Creator Store tracks for lobby and biome chase music.
+- Preserve original WAV compositions separately from the selected catalog audio.
+- Pass 30 offline suites and preserve 0.12.0 and its historical engine evidence.
+- Studio launch did not expose a window; current native playback and balance remain unverified.
+
+0.12.0 | October 18, 2026
+- Run real Roblox Studio physics/pathfinding tests in isolated copies.
+- Fix Broken Causeway backtracking when direct pursuit reused old waypoints.
+- Extend grab warnings to 0.75 seconds with a fixed 0.16-second final lunge.
+- Verify delayed warning reactions can escape while walking still gets caught.
+- Reduce sprint drain to 18 per second and give approved runner dashes a 0.45-second dodge window.
+- Immediately interrupt an unconfirmed grab when the server approves the runner's dash.
+- Verify full five-course Studio escapes in all three themes and a first-course walking capture.
+- Verify 24 catcher traversals across all five courses and all three themes.
+- Extend lobby parkour from 9 to 24 platforms, adding narrow beams and precision landings.
+- Save parkour checkpoints every six stones; keep real falls and a continuous clock.
+- Verify all 24 intended transfers with real R6 running-jump physics.
+- Remove the spawn confetti icon and its server interaction; keep completion celebrations.
+- Use a 30-second queue for every next match, including automatic and explicit solo replays.
+- Preserve vote access and solo Lobby/Play enrollment controls during the queue.
+- Pass 28 offline suites, 136 rules and 27-script compilation.
+- Preserve 0.11.0 files and prepare the updated native deployment package.
+
+0.11.0 | October 18, 2026
+- Add biome landmarks, overhead scenery and surface details to all five themed courses.
+- Open scenery views with low visible rails and transparent upper race boundaries.
+- Rebuild bonus routes with alternating hurdles, raised shortcuts, tall split-route
+  baffles, offset causeways and combined jump/weave sections.
+- Replace straight perimeter gap bypasses with alternating supported crossings.
+- Retain continuous base floors in courses 2/3 and supported detours through later gaps.
+- Reposition Harbor cargo to keep supported routes available at both travel extremes.
+- Raise bruiser pursuit to 29/30/31/32/32.5 and later stalkers to 32.25/33/33.5.
+- Start first-course catchers behind runners; begin initial protection after Ready.
+- Build native neon 3D battery/wind buff models with glow lights and orbit rings.
+- Add local bob/spin, distance limits and per-player cooldown dimming; remove resource GUIs.
+- Remap native cloned model references so each 3D buff retains its own PrimaryPart.
+- Add a themed edit-mode mechanics preview and replace it cleanly at first activation.
+- Migrate mastery layout revision 2: archive old PBs, retain medals/unlocks/cosmetics.
+- Adjust provisional gold/silver targets for the longer routes; human tuning remains pending.
+- Pass all 28 offline suites, 136 pure rules and 27-script compilation.
+- Add 594 native 3D buff checks, 45 supported-route checks and 9 controlled server-pressure checks.
+- Preserve 0.10.0 files; prepare the native place and deployment package without publishing.
+
+0.10.0 | October 15, 2026
+- Add Rift Mastery gateway and themed course selector for previously reached courses.
+- Add isolated practice geometry/hazards, one-tap retry and instant recovery from falls.
+- Keep practice players/clocks/rewards separate from main multiplayer races.
+- Pause automatic solo replay while browsing mastery; Play resumes a chase.
+- Record server-timed bronze/silver/gold medals and personal bests for 15 course/theme pairs.
+- Keep practice bests separate; derive capped medal totals from unique race records.
+- Add compact animated result cards with best-time improvement and earned unlocks.
+- Unlock three animated trails, three catcher skins and three victory effects through medals.
+- Persist mastery and independent cosmetic slots while migrating old profiles.
+- Preserve archetype warning colors, hitboxes and movement when applying skins.
+- Review desktop/phone layouts; keep practice controls clear of result cards.
+- Add 33 mastery-rule, 69 actual practice and 107 mastery-UI/effect checks.
+- Initial medal targets remain provisional until human Studio playtests.
+
+0.9.1 | October 15, 2026
+- Fix bonus-course waypoints comparing root height against floor-level path nodes.
+- Pursue protected arrivals without allowing grabs or charges during protection.
+- Raise later bruiser pursuit to 28-31 and stalkers to 31-33 studs/second.
+- Check full-width supported ground and low obstacles before charges or lunges.
+- Replan blocked paths; discard stale path work after falls, charges and despawns.
+- Avoid crumbling shortcuts; recover stuck/fallen catchers from stable ground.
+- Spread pack spawns and preserve unique bot slots as multiplayer packs change.
+- Replace resource names with mint battery and cyan wind-chevron artwork.
+- Separate stamina and dash rewards/cooldowns; move bonus-course pickups into the race.
+- Add navigation, actual-server pursuit/resource and exported icon-art verification.
+
+0.9.0 | October 14, 2026
+- Added 0.45-second visible/audible reach warnings, short committed lunges and miss recovery.
+- Reserve each threatened runner for one attacker; dodges grant temporary protection.
+- Add amber slow bruisers and cyan charging stalkers after the early learning courses.
+- Add crystal boost bridges, warned crumbling stones and moving cargo to all five courses.
+- Add continuous mint-edged safer detours and optional bonus crystals on the faster routes.
+- Lower slalom barriers to offer fast jumps or safer weaving; preserve the solid intro floor.
+- Give portal arrivals 2.5 seconds of protection and contextual sprint/dash prompts.
+- Shorten lobby/Ready/results to 12/3/4 seconds and add about-three-second solo retries.
+- Add Run Again, Lobby pause and Play resume controls; keep the same map for quick retries.
+- Solo earns half base coins/XP and course progress, without competitive wins/tags or 2x coins.
+- Unlock Rift Scout after three courses and equip it only if the title slot is empty.
+- Return finishers to the supported lobby while others continue; preserve earned wins on reset.
+- Add anonymous server Output reports, rate-limited device FPS samples and a playtest worksheet.
+- Add pursuit, map-mechanic, solo loop, warning, tutorial, UI and reporting regressions.
+- Preserve 0.8.0 native files and package the updated Studio playtest release.
+
+0.8.0 | October 14, 2026
+- Removed the three unmarked void cuts in the first onward course, Shattered Steps.
+- Added continuous ground and three raised jump obstacles to that introductory section.
+- Marked both lips of later jumping gaps with amber edges and short JUMP! signs.
+- Restyled the HUD with Fredoka One lettering, rounded pastel panels and pill buttons.
+- Reduced the chase objective to Run to Finish!, a timer, course dots and dash meter.
+- Removed automatic help; the optional rules card contains only basic instructions.
+- Shortened course/capture/recharge/parkour messages and floating icon captions.
+- Kept menus hidden across mid-chase resizing and hid the unused lobby dash meter.
+- Added full-width ground-support regression checks and phone/desktop layout reviews.
+- Preserved 0.7.0 native files before rebuilding; updated deployment package.
+
+0.7.0 | October 14, 2026
+- Restyled the VIP lounge with midnight tiling, champagne trim and velvet sofas.
+- Added an open canopy, crystal chandelier, six accent lights and a throne corner.
+- Added seven usable VIP seats and a hovering style-studio wardrobe with halo display.
+- Added five wearable auras and six titles, plus free empty aura/title selections.
+- Three items unlock with coins, six through saved progress, and two through Valley VIP.
+- Added Style Unlocks shop tab with exact prices, goal progress and equip state.
+- Validate every purchase/equip on the server and charge owned coin items only once.
+- Persist selected aura/title independently while preserving old profiles and store name.
+- Never trust stored/client VIP flags; verify ownership before enabling paid cosmetics.
+- Keep cosmetics on catcher costumes with body clearance and clear them during capture.
+- Added cosmetic, persistence, wardrobe, UI and server action regression coverage.
+- Updated lounge preview, deployment listing, pass descriptions and release package.
+- Preserved the 0.6.0 native place files before rebuilding.
+
+0.6.0 | October 14, 2026
+- Expanded the public lobby from 8,320 to 22,560 square studs, about 2.7x its prior area.
+- Opened the old rear wall into a broad garden plaza with a continuous connector.
+- Added a segmented rift fountain, luminous water, floating heart crystal and shards.
+- Added eight flowering trees, garden courts, twelve usable seats and crystal tables.
+- Added warm lanterns, 34 hanging lights, flower beds, paving and illuminated paths.
+- Added four floating crystal islands outside the new garden rails.
+- Extended invisible boundaries and server containment to the new plaza and connector.
+- Release seat welds before teleports so seated players enter matches safely.
+- Preserved the floating parkour void, VIP access, voting, shop and five-course chase.
+- Updated the geometry preview, native-place checks, boundary tests and deployment package.
+- Preserved the 0.5.0 native place files before rebuilding.
+
+0.5.0 | October 14, 2026
+- Added server-approved dash body poses, wind ribbons, speed streaks and camera boost.
+- Support R6, R15 and upgraded avatar joints; catcher costumes have their own dash pose.
+- Restore Animator poses every frame and cancel dash movement/effects at teleports/grabs.
+- Replaced alternating paused waves with five continuously connected course sections.
+- Gates immediately advance each runner, refill stamina and reset dash cooldown.
+- Added Shattered Steps, Serpent Slalom, Broken Causeway and Rift Gauntlet.
+- Added real gaps, narrow staggered paths, alternating walls and jump hurdles.
+- Escalated AI packs from two to six; split groups share a 12-bot budget.
+- Added jumping NPC paths, fall recovery, cleared-section cleanup and human catcher follow.
+- Added individual course HUD, local finish markers and per-course recharge icons.
+- Fixed a missed-grab callback that could convert a runner after a successful dodge.
+- Exported native Dash action, course-layout preview and additional lifecycle/effect tests.
+- Preserved 0.4.0 place files; publishing, uploaded audio and pass IDs remain unconfigured.
+
+0.4.0 | October 14, 2026
+- Replaced distant instant tags with a tighter forward grab, 0.24-second visible
+  lunge/reach and authoritative contact recheck. Dodges cancel the attempt.
+- Added a 2.1-second lift/whole-avatar swallow cinematic with movement, visibility
+  and camera restoration before catcher conversion. No blood or dismemberment.
+- Removed the parkour safety floor and pillars; narrowed platforms over real gaps.
+- Spaced recovery checkpoints at stones 3 and 6 and kept the clock running on falls.
+- Fixed Neon Harbor lettering intersecting posts, with front clearance and text padding.
+- Replaced interaction plates with hovering icon buttons and zero-hold proximity input.
+- Composed four original looping WAV scores: chill lobby and distinct fast map themes.
+- Added automatic music crossfades and mute, plus an audio-ID activation helper.
+- Audio awaits Roblox import because the game and music assets remain unpublished.
+- Added actual capture, visual/camera, hover, music-player and PCM validation.
+
+0.3.0 | October 14, 2026
+- Authored walk, run and sprint cycles, jump/fall poses, idle breathing and landing blend.
+- Exported three native KeyframeSequence clips and a geometry-based animated preview.
+- Added full-height invisible barriers around the lobby, parkour wing and VIP lounge.
+- Added server fall/escape recovery without affecting active arena players.
+- Rebuilt the lobby with paving, crystal garden, pergola, benches and violet trees.
+- Added free nine-step parkour, sequential grounded checkpoints and session personal bests.
+- Extended intermission to 25 seconds to give players time to try the course.
+- Added a violet 3D night backdrop, pale moon, stars, rift spires and floating shards.
+- Moved valley cliffs clear of the expanded lobby and preserved older place versions.
+
+0.2.1 | October 14, 2026
+- Added original Temple Run-inspired Rift Stalker catchers with dark bodies,
+  glowing green eyes, pale masks, shaggy shoulders and long clawed arms.
+- Applied the design to solo NPCs and player-controlled catchers.
+- Added a local hunched run/idle pose without changing player controls or hitboxes.
+- Restore original avatar transparency and late-loaded accessories in the lobby.
+- Added actual-rig/animation/restoration validation, a geometry preview and native model.
+- Preserved the 0.2.0 place files and retained maps, passes and profile data format.
+
+0.1.1
+- Fixed server startup in unpublished Studio places. DataStore handles now initialize
+  only inside protected live loads, after Studio and unpublished-place checks.
+- Added actual-module regressions for forbidden DataStore creation and failed initialization.
+- Added an actual server initialization/countdown regression with simulated Studio services.
+- Raised the lobby 28 studs so players can see the arena above the perimeter wall.
+- Corrected lobby sign facing, added fill lamps, brightened surfaces and ambient light,
+  enabled environment diffuse lighting, and reduced fog.
+- Display Joining during initialization instead of a false Next Match 0.
+- Preserved the previous place files in dist/previous/0.1.0.
+0.2.0 | October 12, 2026
+Added Crystal Grove, Sunset Ruins and Neon Harbor with server-side map rotation
+and one-vote-per-player selection. Added symmetric cover and an open center route.
+Added optional crystal routes and shared stamina/dash recharge pads.
+Scaled initial catcher count for large servers while keeping fair turn rotation.
+Added lobby voting plinths, a free confetti bell, Valley Outfitters and a VIP lounge.
+Added scrolling Trails/Robux shop, server-verified game-pass perks, premium animated
+trails, client price loading, explicit purchase buttons and cancellation handling.
+Created pass icons, promotional banner, listing copy, suggested prices and setup.
+Pass purchases remain disabled until this unpublished game receives real pass IDs.
+Kept the DataStore startup fix and existing profile format/store name.
+Added actual world, pass and client tests, plus map-backed server startup checks.
+

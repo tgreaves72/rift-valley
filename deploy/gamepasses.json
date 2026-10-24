@@ -1,0 +1,49 @@
+{
+  "version": "0.15.0",
+  "configured": true,
+  "passIds": {
+    "VIP": 2052221268,
+    "DoubleCoins": 2053799282,
+    "StylePack": 2052131256
+  },
+  "pricingNote": "Launch prices saved and verified in Creator Hub and the public Store on 2026-10-23. Managed pricing is off. The in-game shop reads Roblox current prices for each player.",
+  "passes": [
+    {
+      "key": "VIP",
+      "name": "Valley VIP",
+      "suggestedPriceRobux": 129,
+      "icon": "assets/passes/VIP.png",
+      "description": "Unlock the styled sky lounge, Gold trail, VIP badge, Royal Halo and Valley Royalty title. The lounge includes a Speed Coil, Jump Coil and Rift Blaster for the separate VIP Arena, where you can spar with other VIP players and two enemies. Gear works only in the VIP Arena. Everyone shares the same race and parkour movement abilities. Permanent access with one purchase.",
+      "id": 2052221268,
+      "priceRobux": 129,
+      "onSale": true,
+      "listed": true
+    },
+    {
+      "key": "DoubleCoins",
+      "name": "Double Coins",
+      "suggestedPriceRobux": 199,
+      "icon": "assets/passes/DoubleCoins.png",
+      "description": "Collect more style with permanently doubled coin earnings from multiplayer crossings, tags, crystals and match wins. Applies automatically after ownership is verified. Solo earns reduced base coins; this pass applies only in multiplayer. This pass does not increase speed, stamina, dash power or XP.",
+      "id": 2053799282,
+      "priceRobux": 199,
+      "onSale": true,
+      "listed": true
+    },
+    {
+      "key": "StylePack",
+      "name": "Prism Trail Pack",
+      "suggestedPriceRobux": 99,
+      "icon": "assets/passes/StylePack.png",
+      "description": "Light up the valley with three animated color trails: Aurora, Prism and Ember. Buy once and equip your favorite in the Trails shop. These trails change your appearance and use the same chase abilities as every player.",
+      "id": 2052131256,
+      "priceRobux": 99,
+      "onSale": true,
+      "listed": true
+    }
+  ],
+  "onSale": true,
+  "listed": true,
+  "salesVerifiedUTC": "2026-10-23T23:38:58Z",
+  "publicationRecord": "deploy/pass-publication.json"
+}

@@ -1,0 +1,43 @@
+RIFT VALLEY MUSIC | 0.13.3
+
+FOUR FINISHED LOOPS
+Lobby.wav: Overlook Afterglow, 78 BPM. Warm pads, soft bells and a relaxed bass line.
+CrystalGrove.wav: Glassfang Pursuit, 150 BPM. Bright crystal arpeggios and driving drums.
+SunsetRuins.wav: Ruin Runners, 160 BPM. Low percussion and urgent modal synth figures.
+NeonHarbor.wav: Harbor Overdrive, 172 BPM. Fast electronic bass and synth lead.
+All four tracks live in assets/music. They are original synthesized compositions,
+not third-party recordings. Stereo 44.1 kHz PCM WAV, below 20 MB each, with loop seams.
+
+CONNECTED GAME MUSIC
+The game now references four public APMOfficial Creator Store releases:
+Lobby: Relaxed Scene (1848354536), a gentle melodic theme.
+Crystal Grove: Intense Chase (1848090337), action pursuit music.
+Sunset Ruins: Chaser (9042664292), dark percussion and driving tribal rhythms.
+Neon Harbor: Classic Chase (1837560230), electronic club pursuit music.
+The official listings and credits are in assets/music/credits.json.
+These are streamed Roblox assets. No custom upload is needed for these selections.
+The 0.13.3 Studio probes loaded all four tracks and reported IsPlaying with
+positive duration. These probes use zero volume; audible review and privately
+published playback remain separate checks.
+No audio recordings have been downloaded or included in the release archive.
+
+OPTIONAL: SWITCH TO THE ORIGINAL COMPOSITIONS
+1. Open the current Rift Valley build in Studio and publish your own private experience.
+2. Open Asset Manager, choose Import, and select the four WAV files from assets/music.
+3. Wait for each import and its audio moderation/processing to complete.
+4. Copy each audio asset ID. Grant the Rift Valley experience usage permission for
+   every private audio asset in Creator Dashboard if Roblox requires it.
+5. From this project folder in PowerShell, run:
+   .\build\Configure-Audio.ps1
+   Enter LobbyAudioId, CrystalGroveAudioId, SunsetRuinsAudioId and NeonHarborAudioId
+   when prompted. The script connects IDs, validates/rebuilds the place and packages it.
+6. Stop the Studio test, close the old tab and reopen dist/RiftValley-0.13.0.rbxl.
+   Test both lobby and each map. Republish the updated place to the same experience.
+
+PLAYBACK
+Spectators hear the chill lobby loop. Ready/Crossing participants hear their map's
+intense score. Tracks crossfade over 1.5 seconds and loop. The music button mutes
+locally; muting never changes another player's volume. Missing/unloaded IDs stay silent.
+
+SOURCE
+https://create.roblox.com/docs/audio/assets

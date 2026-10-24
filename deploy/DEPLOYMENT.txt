@@ -1,0 +1,196 @@
+RIFT VALLEY DEPLOYMENT | 0.15.0
+PUBLIC REPOSITORY NOTE
+See README.md and docs/TESTING.md for the current portable verification summary.
+References below to publication records, screenshots and historical reports refer
+to local release evidence. Those private working records are not distributed in
+this public repository. The Studio build and public configuration are included.
+
+Status: public release under tgtopbigt confirmed on 2026-10-23, ages 16+.
+Owner: tgtopbigt | Owner user ID: 11802024848
+Universe ID: 10772509045 | Start place ID: 86531279798778
+Game: https://www.roblox.com/games/86531279798778/Rift-Valley
+Dashboard: https://create.roblox.com/dashboard/creations/experiences/10772509045/manage-audience
+Team Create and Roblox AI Data Sharing: both disabled by the user's instruction.
+Upload record: deploy/publication.json. Do not create another experience.
+The 30-player limit and new artwork are saved. The Home thumbnail is active.
+The user approved the content declaration and public release, then completed the
+age check. Creator Hub confirms availability to players ages 16+. Manage access
+shows Public selected and Friends unchecked. Wider audience requirements remain.
+Evidence: deploy/published-status.jpg, deploy/published-access.jpg and
+deploy/published-game-page.jpg. The live game page shows the new thumbnail,
+@tgtopbigt, Content May Vary / Ages 16+, a Play button and server size 30.
+Cloud version 3 connects Valley VIP (2052221268, 129 Robux), Double Coins
+(2053799282, 199) and Prism Trail Pack (2052131256, 99). All three are on sale,
+Listed and verified on the public Store. No real purchase was performed.
+Evidence: deploy/pass-publication.json and deploy/passes-live-store.jpg.
+The earlier private upload under CoolGuy5655919 remains intact; its record is
+deploy/history/publication-CoolGuy5655919-2026-10-22.json.
+
+1. OPEN AND TEST
+Install Roblox Studio from https://create.roblox.com/ if it is not installed.
+Open dist/RiftValley-0.15.0.rbxl, then use Play to run solo practice.
+If an older Rift Valley tab is already open, stop the test and close that tab first.
+Studio keeps the opened place in memory; rebuilding the file does not refresh it.
+Use Studio Server & Clients testing with 2, 4, and then more clients.
+Complete the release checks below before inviting external players.
+
+2. UPDATE THE EXISTING EXPERIENCE
+The 0.15.0 build is already uploaded as Rift Valley under tgtopbigt.
+Computer, phone, tablet and console are enabled; VR is disabled.
+assets/launch-icon.png and assets/launch-thumbnail-v2.png are uploaded. The 30-player
+server limit is saved. The approved age-restricted-content answer is No, based on
+stylized monster capture/swallowing, blaster damage and fear without graphic gore.
+Public release is complete for players ages 16+. Creator Dashboard still lists
+identity verification, 2-step verification, the full content rating questionnaire,
+engaged-player review and Kids & Select publishing requirements for wider access.
+No wider-audience payment has been authorized or made.
+For later versions, publish to this cloud place or use Publish.ps1 with the
+universe/place pair above and a scoped Open Cloud key.
+The place's maximum server size is configured to 30 in Creator Dashboard.
+Set the avatar type to R6 and use standard avatar scale for consistent tag reach.
+The catcher icon and approved chase thumbnail are installed in Creator Dashboard.
+The chase thumbnail is visible on the live page: deploy/thumbnail-v2-live.jpg.
+Do not add custom chat code. Roblox's default chat retains platform moderation.
+
+3. VERIFY SAVES IN ROBLOX
+Studio tests deliberately skip live DataStore writes, even with API access enabled.
+Test persistent profiles with authorized players in Roblox after private publishing.
+New private experiences allow the owner and users with Edit access. If you need
+Playtest-only access, configure a Limited audience after meeting Roblox's current
+publishing requirements.
+Earn coins in multiplayer, buy a trail, leave, then rejoin and verify persistence.
+Verify the shop save status. A session-only profile must not overwrite stored data.
+
+4. RELEASE CHECKS
+[ ] Verify Learn to Run jump/sprint/dash targets and Skip on each device.
+[ ] Check UTC daily goal rotation, one-time rewards and save/rejoin persistence.
+[ ] Record/replay a parkour personal best and equip the free Ascent Ace title.
+[ ] Confirm attack outlines follow contact limits and canceled attacks clear them.
+[ ] Review native multiplayer evidence separately from human playtest observations.
+[ ] After publishing, verify onboarding/failure/departure analytics delivery.
+[ ] Complete course/detail/pressure checks in section 10 of PLAYTEST.txt.
+[ ] Complete mastery/practice scenarios 8-9, including a race running alongside practice.
+[ ] Tune initial medal times using measured Studio runs, then rebuild and verify again.
+[ ] Bonus-course pursuit, gap/cargo avoidance and recovery pass section 7 of PLAYTEST.txt.
+[ ] Battery/wind buffs are glowing 3D models with local cooldown dimming and matching rewards.
+[ ] Run the uncoached 5-10-player session in deploy/PLAYTEST.txt and record observations.
+[ ] Amber bruisers and cyan charging stalkers have readable warnings and recovery.
+[ ] Only one monster can wind up against a runner at once; successful dodges give protection.
+[ ] Grove boost bridges, Ruins crumble warnings/reset and Harbor moving cargo work in physics.
+[ ] Alternating mint-edged crossings have supported ground through every later gap course.
+[ ] Basic walking can be caught; deliberate sprint/dash and route choices allow escape.
+[ ] Catchers start in front and pursue immediately while 2.5-second contact protection remains.
+[ ] Initial paths prepare during Ready; portal finishes create the next pack without a roster wait.
+[ ] Bonus shortcut crystals award once per course; first-course sprint/dash prompts match device.
+[ ] Every match uses a 30-second queue; Run Again cannot bypass it. Lobby/Play pause/resume enrollment.
+[ ] Three courses unlock Rift Scout; existing equipped titles stay selected.
+[ ] A finisher can use lobby/parkour while others play and still receives the earned result.
+[ ] [RiftPlaytest] reports record course failures and separate touch/desktop frame-rate samples.
+[ ] After the first finish, walk across Shattered Steps, including all three former cuts.
+[ ] Raised steps support normal jumps; later gaps show amber edges and JUMP! markers.
+[ ] HUD shows Run to Finish!, course dots and timer without an automatic help popup.
+[ ] Short rules open through ?; HUD stays readable on computer, phone and controller.
+[ ] A catcher visibly reaches/lunges before the forward contact recheck catches a runner.
+[ ] Dodging sideways, dashing away, jumping above reach and solid cover can cancel grabs.
+[ ] Pickup/swallow plays fully before conversion; last-runner capture doesn't end early.
+[ ] Departure/reset/round end restores movement, visibility and camera after capture.
+[ ] Narrow parkour platforms have genuine gaps; falls reach the void before recovery.
+[ ] All 24 parkour platforms require ordered landings; beacons mark 6/12/18; a failed attempt retries from the start.
+[ ] Map and parkour pressure plates work through grounded contact, with no button or E press.
+[ ] Holding a vote plate cannot stack votes; holding parkour entry cannot restart its timer.
+[ ] Shop/VIP/Mastery side buttons and native 3D destination labels work on desktop and phone.
+[ ] Parkour has no return icons or 24-jumps board. The plate starts a timer and Retry works during/after death.
+[ ] VIP owners receive all three tools; non-owners cannot obtain or use them.
+[ ] Two VIP players can spar in the activity arena; shots cannot damage players in races or parkour.
+[ ] Arena enemies follow routes around cover, take blaster damage and respawn.
+[ ] Coils reset to normal movement when leaving the VIP Arena.
+[ ] Neon Harbor sign poles no longer occlude lettering.
+[ ] Connected catalog music loads and plays: chill lobby and intense scores for all three maps.
+[ ] Music crossfade/mute and personal sky colors follow each player's phase and practice map.
+[ ] Walk/run/sprint poses blend with speed, jump/fall poses work and landing settles.
+[ ] All spawn perimeter barriers prevent ordinary jumps from leaving the lobby.
+[ ] The larger garden plaza and connector remain accessible without recovery teleports.
+[ ] Fountain, trees, flower beds and lanterns leave the walking routes clear.
+[ ] All twelve garden seats and seven VIP seats work; match entry releases seated avatars.
+[ ] VIP chandelier, canopy, throne and mirror leave the arrival/exit paths clear.
+[ ] Style Unlocks shows coin prices, goal progress, owned/equipped state and no fake VIP grants.
+[ ] Coin cosmetics charge once; auras/titles equip independently and survive live rejoin.
+[ ] Goal cosmetics unlock at the exact saved win/tag/course requirements.
+[ ] Costume changes preserve equipped cosmetics; capture and respawn restore appearance.
+[ ] New plaza corners, ceiling and rear boundary prevent leaving the spawn area.
+[ ] The bridge to the parkour wing stays open; ceiling barriers leave jump clearance.
+[ ] Test all 24 parkour running jumps and narrow beams on each supported device.
+[ ] Checkpoints require ordered grounded landings; falls return to the saved stone.
+[ ] Parkour timer/personal best work, and the next match clears an unfinished lap.
+[ ] Violet night backdrop covers all camera angles; moon/spires/shards stay decorative.
+[ ] Solo catchers show a dark hulking body, glowing eyes and long clawed arms.
+[ ] The creature run animates smoothly; bots still chase and tag normally.
+[ ] A tagged player transforms into a creature and retains normal chase controls.
+[ ] R6 and R15 players return to their exact avatar appearance in the lobby.
+[ ] Catcher outfits hide late-loaded avatar accessories and leave no extra collider.
+[ ] Each vote selects the majority map; ties rotate and departing votes clear.
+[ ] All three maps load one at a time and preserve a clear center route.
+[ ] Crystals award once per runner per crossing, capped at three pickups.
+[ ] 3D buffs work for both teams and obey separate seven-second player cooldowns.
+[ ] Confetti bell, vendor and lounge prompts reject distant/in-match interactions.
+[x] Connect all three real pass IDs, publish the existing cloud place as v3,
+    enable 129/199/99 Robux sales and verify Listed status and the public Store.
+[ ] Real owners receive perks on join; cancellation grants no perk.
+[ ] Double Coins applies exactly once to multiplayer coins and never to practice.
+[ ] Current Robux prices match Roblox purchase prompts; unavailable passes disable.
+[ ] Non-owners cannot equip premium trails or enter the VIP portal.
+[ ] Solo packs progress 2/3/4/5/6; half base rewards/course progress never grant win/tag stats.
+[ ] Multiplayer starts with 1/2/3 human catchers plus AI; split sections share 12 active bots.
+[ ] Movement, camera, sprint, jump and dash work on all chosen devices.
+[ ] Stamina exhausts, regenerates, and rejects a dash without enough stamina.
+[ ] Dash cooldown prevents repeated dashes and state resets at each crossing.
+[ ] Each gate advances its runner immediately; only the fifth gate grants safe escape.
+[ ] Slower runners keep their own section and the 150-second run clock never resets.
+[ ] Gates refill stamina/reset dash; human catchers follow when a section clears.
+[ ] Gap jumps, slalom, causeway and gauntlet are reachable on all supported devices.
+[ ] NPCs jump gaps, route around walls, recover falls and retire in empty courses.
+[ ] Wind dash animates runners and catchers; teleport/capture restores poses and camera.
+[ ] Safe runners cannot receive tags. Cover blocks tags through obstacles.
+[ ] Tags convert runners once; the attacker receives one tag reward.
+[ ] Timer expiry turns unfinished runners into catchers.
+[ ] Runner wins and catcher-team wins award the intended rewards once per match.
+[ ] A catcher leaving mid-match and the last runner leaving never stall the round.
+[ ] Late joiners wait in the lobby until the next match.
+[ ] Reset/death during crossing respawns a catcher, without restoring runner status.
+[ ] Purchases cannot double charge, bypass prices, or equip an unowned trail.
+[ ] Live autosave, leave/rejoin, server shutdown, and concurrent-join locks work.
+[ ] Touch and controller UI stays readable; actions do not overlap default controls.
+[ ] No runtime errors appear in Studio Output or the live developer console.
+[ ] Frame rate and server time remain acceptable near 30 players.
+
+5. PREPARE PUBLIC ACCESS
+Complete the content maturity and compliance questionnaire based on actual gameplay.
+Check Roblox's current account verification and audience requirements in Creator
+Dashboard. These vary by audience; use the official documentation linked below.
+Choose Limited access for an external playtest or Public when release checks pass.
+Save the audience change. The place uploader alone does not change the audience.
+
+OPTIONAL OPEN CLOUD VERSION UPLOAD
+First create the experience in Studio. Obtain its universe ID and place ID from
+Creator Dashboard. Create a scoped Open Cloud API key with place-publishing access
+for that intended experience. Configure the credential through your local secrets
+workflow; never commit or paste it into chat.
+The script reads ROBLOX_UNIVERSE_ID, ROBLOX_PLACE_ID and ROBLOX_OPEN_CLOUD_API_KEY.
+Run .\deploy\Publish.ps1 for a local dry-run.
+Run .\deploy\Publish.ps1 -Publish -WhatIf to inspect the exact target action.
+Run .\deploy\Publish.ps1 -Publish when you intend to upload that validated build.
+The upload adds a published place version to the selected existing destination.
+It does not create an experience or configure the audience, art, avatar, or size.
+If the network response is uncertain, inspect version history before retrying.
+
+ROLLBACK
+Use Creator Dashboard place version history to restore the last known good version.
+Preserve this release ZIP and checksums before any later edits.
+The previous 0.11.0 place files are preserved in dist/previous/0.11.0.
+Keep DataStoreName unchanged during ordinary updates to retain player progress.
+
+OFFICIAL REFERENCES (checked October 12, 2026)
+https://create.roblox.com/docs/production/publishing/publish-games-and-places
+https://create.roblox.com/docs/cloud/guides/usage-place-publishing
+https://create.roblox.com/docs/cloud-services/data-stores
+https://create.roblox.com/docs/production/monetization/passes

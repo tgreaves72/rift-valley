@@ -1,0 +1,156 @@
+{
+  "version": "0.15.0",
+  "compiledProductionScripts": 32,
+  "sourceSHA256": "a004aaf23a25bb4d9b0ae51226290539607d9f6f64bc9249397c893c1c045717",
+  "builds": {
+    "dist/RiftValley.rbxl": {
+      "bytes": 174849,
+      "sha256": "a84ddcb6f85ce2d8b8d3c0189b6f06aec2ef37462fb3570b13309e80aaed2281"
+    },
+    "dist/RiftValley.rbxlx": {
+      "bytes": 8212373,
+      "sha256": "b0762c1d0e99ec9241c796488740aba419f4270dd2ce8d8b48030d8734a49be9"
+    }
+  },
+  "offline": {
+    "checkedOn": "2026-10-22",
+    "suitesPassed": 38,
+    "compiledGameScripts": 32,
+    "note": "Subsequent configured-pass and focused suites also passed; see TESTING.md."
+  },
+  "studioMultiplayer": {
+    "checkedOn": "2026-10-24",
+    "run": "15n",
+    "completed": true,
+    "passed": true,
+    "nativeClients": 3,
+    "humanPlayers": 0,
+    "workspaceSHA256": "09c2c53639a0e9ad24b547e44b390552b027d8e79f986411285ae8f20650ced1",
+    "outcomes": [
+      {
+        "map": "CrystalGrove",
+        "escapes": 2,
+        "captures": 0,
+        "maxCourse": 5,
+        "attempts": [
+          {
+            "map": "CrystalGrove",
+            "warning": true,
+            "captures": 0,
+            "runners": 2,
+            "attempt": 1,
+            "maxCourse": 5,
+            "escapes": 2,
+            "catchers": 1
+          }
+        ]
+      },
+      {
+        "map": "SunsetRuins",
+        "escapes": 1,
+        "captures": 1,
+        "maxCourse": 5,
+        "attempts": [
+          {
+            "map": "SunsetRuins",
+            "warning": true,
+            "captures": 1,
+            "runners": 2,
+            "attempt": 1,
+            "maxCourse": 5,
+            "escapes": 1,
+            "catchers": 1
+          }
+        ]
+      },
+      {
+        "map": "NeonHarbor",
+        "escapes": 1,
+        "captures": 3,
+        "maxCourse": 5,
+        "attempts": [
+          {
+            "map": "NeonHarbor",
+            "warning": true,
+            "captures": 2,
+            "runners": 2,
+            "attempt": 1,
+            "maxCourse": 4,
+            "escapes": 0,
+            "catchers": 1
+          },
+          {
+            "map": "NeonHarbor",
+            "warning": true,
+            "captures": 1,
+            "runners": 2,
+            "attempt": 2,
+            "maxCourse": 5,
+            "escapes": 1,
+            "catchers": 1
+          }
+        ]
+      }
+    ],
+    "checks": {
+      "allClientUIReady": true,
+      "multiplayerRolesAndTransitions": true,
+      "scope": "Three native Studio clients with automated input. No human/device balance or live save/purchase claim.",
+      "clientRoleReplication": true,
+      "passed": true,
+      "totalEscapes": 4,
+      "completed": true,
+      "version": "0.15.0",
+      "humanPlayers": 0,
+      "testGroup": "Races",
+      "nativeClients": 3,
+      "sharedPressurePlateVotes": true,
+      "run": "15n"
+    },
+    "fixtureScope": "Automated movement input and sprint attribute; production match script and geometry preserved. Race group does not exercise the VIP ownership fixture."
+  },
+  "studioPhysics": {
+    "checkedOn": "2026-10-24",
+    "passed": true,
+    "catcherRoutes": {
+      "passed": 24,
+      "total": 24
+    },
+    "individualParkourTransfers": {
+      "passed": 24,
+      "total": 24
+    },
+    "fullHumanParkourLapTested": false
+  },
+  "music": {
+    "distinctTracks": 4,
+    "allObservedTracksLoadedAndPlaying": true,
+    "audibleQualityCertified": false
+  },
+  "pending": [
+    "live profile save and rejoin",
+    "genuine paid purchase and perk rejoin",
+    "live analytics dashboard delivery",
+    "physical devices",
+    "human multiplayer balance",
+    "30-player load test",
+    "live CoreScripts chat initialization check"
+  ],
+  "privacy": "Portable summary omits raw application logs, workstation paths and desktop screenshots.",
+  "portableCheckout": {
+    "checkedOn": "2026-10-24",
+    "publicFiles": 213,
+    "allPassed": true,
+    "luauSuitesPassed": 38,
+    "productionScriptsCompiled": 32,
+    "audioSuitePassed": true,
+    "pythonBuildersParse": true,
+    "documentationLinksResolve": true
+  },
+  "catcherStartup": {
+    "observations": 74,
+    "passed": 74,
+    "thresholdStuds": 0.5,
+    "thresholdSeconds": 1.0
+  }
+}

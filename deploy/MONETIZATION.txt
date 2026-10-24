@@ -1,0 +1,69 @@
+RIFT VALLEY GAME PASSES | 0.15.0
+
+PUBLISHED AND ON SALE
+Owner: tgtopbigt
+Universe: 10772509045 | Start place: 86531279798778 | Cloud version: 3
+Game: https://www.roblox.com/games/86531279798778/Rift-Valley
+Store: https://www.roblox.com/games/86531279798778/Rift-Valley#!/store
+
+Valley VIP       | 2052221268 | 129 Robux
+Double Coins     | 2053799282 | 199 Robux
+Prism Trail Pack | 2052131256 |  99 Robux
+
+All three passes belong to this experience, are on sale and Listed in the
+Creator Hub Shop. The public Store displays their icons, names and prices.
+Verified 2026-10-23. Managed pricing remains off. The in-game shop reads each
+player's current Roblox price rather than hardcoding these launch prices.
+Studio purchase buttons display LIVE GAME ONLY. No real purchase was performed.
+
+IMPLEMENTED PERKS
+Valley VIP: Gold trail, VIP badge, Royal Halo, Valley Royalty title and styled
+sky lounge with seven seats, crystal chandelier, throne corner and style studio.
+Includes Speed Coil, Jump Coil and Rift Blaster for the separate VIP Arena.
+Gear works only in the VIP Arena. Cover and server raycasts control damage;
+all PvP participants must stand inside that arena. Race, practice and timed
+parkour abilities remain the same for everyone.
+Double Coins: doubles multiplayer crossing, tag, crystal and win coin rewards.
+It does not multiply XP, solo rewards or practice rewards.
+Prism Trail Pack: Aurora, Prism and Ember animated trails in the Trails shop.
+Paid entitlements come from Roblox ownership checks on join and after purchase,
+never stored profile flags or client claims.
+
+PURCHASE FLOW
+Each pass explains its permanent benefits. A player explicitly clicks its price
+button to open Roblox's confirmation. No automatic purchase prompts or ad spend.
+The shop handles owned, unavailable, cancelled and pending purchase states.
+An authorized tester still needs to verify a genuine purchase, cancellation,
+ownership after rejoining, equipped perks and multiplayer coin multiplication.
+The creator's Store shows Owned automatically; that does not prove a paid test.
+
+RELEASE EVIDENCE
+Related records and screenshots:
+deploy/pass-publication.json
+deploy/pass-update-published.jpg
+deploy/passes-on-sale.jpg
+deploy/passes-listed.jpg
+deploy/passes-live-store.jpg
+deploy/monetization-update-validation.json
+The original full-suite and native multiplayer records remain historical.
+Final native multiplayer sign-off and human/device testing remain incomplete.
+
+FUTURE UPDATES
+Reuse these passes. Do not create duplicates or publish another experience.
+Change sale prices through the existing passes' Sales pages in Creator Hub.
+For a deliberately replaced pass ID, run build/Configure-Passes.ps1 with all
+three intended IDs. It rebuilds and packages locally; it does not publish.
+Then open the existing cloud place, verify universe/place IDs and publish the
+updated PassIds module. Never retarget another game.
+The pre-pass local build remains in dist/previous/0.15.0-pre-passes.
+
+MARKETING ASSETS
+Three 512x512 icons: assets/passes/VIP.png, DoubleCoins.png and StylePack.png.
+Promotional banner: assets/passes/store-banner.png.
+Listing descriptions and verified sale metadata: deploy/gamepasses.json.
+Approved chase thumbnail: assets/launch-thumbnail-v2.png, visible publicly.
+The in-game shop, side buttons, glowing destination models and pass detail cards
+already connect to the configured IDs.
+
+OFFICIAL GUIDE
+https://create.roblox.com/docs/production/monetization/passes

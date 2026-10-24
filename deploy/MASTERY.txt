@@ -1,0 +1,57 @@
+RIFT MASTERY | 0.14.0
+
+ACCESS
+Lobby menu > Mastery, or the garden gateway behind the fountain.
+The gateway now has a stationary glowing 3D trophy and a small overhead name.
+The menu uses six native 3D trophy/medal viewports with earned medal colors.
+Choose a theme and a reached course. Reaching a later course in a chase unlocks
+practice permanently. Existing profiles migrate prior course progress.
+Practice uses isolated copies with the selected theme's geometry and hazards.
+It has no chasers. Retry, a fall or movement violation resets just that attempt.
+A successful practice finish stores a practice best; it grants no race rewards.
+The trainee can retry, change course, or return to the lobby.
+
+RACE MEDALS
+Each of the 15 theme/course pairs stores one best race time and highest medal.
+A legitimate finish earns bronze. Meet silver/gold targets for higher medals.
+Medal points use bronze=1, silver=2, gold=3; maximum 45 points. Repeating a
+course improves its record rather than accumulating duplicate medal progress.
+All times and rewards come from the server; clients cannot submit completions.
+Intermediate course finishes save medals and records without popup cards.
+Practice completion and the fifth race finish show a brief two-line medal/time
+badge. View detailed records, medal totals and targets in the Mastery menu.
+Read Config.Mastery for the editable initial gold/silver times and theme scales.
+Gold seconds by course: 12/15/17/18/20. Silver: 20/25/29/33/35.
+Grove scale is 1, Ruins 1.05, Harbor 1.10.
+These targets require human playtesting and tuning before public release.
+
+EARNED REWARDS
+Grove shimmer trail: medals on 3 Crystal Grove courses.
+Sunset ribbon trail: medals on 3 Sunset Ruins courses.
+Neon current trail: medals on 3 Neon Harbor courses.
+Grove Guardian skin: medals on all 5 Crystal Grove courses.
+Ruins Sentinel skin: medals on all 5 Sunset Ruins courses.
+Harbor Phantom skin: medals on all 5 Neon Harbor courses.
+Crystal Bloom victory: 6 medal points.
+Sunset Sparks victory: silver or gold on 5 distinct theme/course pairs.
+Neon Fireworks victory: gold on 5 distinct theme/course pairs.
+
+Equip rewards in Shop > Trails or Style Unlocks. Skin and Victory slots work
+independently from Aura, Title and Trail. Availability derives from saved race
+medals, rather than stored ownership flags. Mastery skins recolor existing
+geometry and preserve the skeleton, mass, collision and warning-eye colors.
+Victory effects stay local within 140 studs, last about 1.3 seconds, and share
+a 90-particle cap across simultaneous celebrations.
+
+PERSISTENCE AND LIMITS
+No DataStore reset. Old profiles keep currency, purchased trails and cosmetic
+preferences. Layout revision 2 archives previous race/practice best times as
+legacyBestMs and starts fresh bestMs for the rebuilt courses. Existing medals,
+unlocked courses and earned styles remain. New records preserve highest medals.
+Live saves include these records and cosmetic preferences. Unpublished Studio
+remains session-only.
+Geometry/hazards share one copy for equal course/theme requests, up to 15 copies
+across the whole server. The final trainee leaving releases that copy. Practice
+has independent clocks, movement limits and fall recovery; main races continue.
+Studio testing must verify actual movement, replication, layered cameras and
+mobile frame rates. Offline suites do not reproduce these engine behaviors.

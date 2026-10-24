@@ -1,0 +1,17 @@
+{
+  "delayedDashInterruptVerified": true,
+  "managedAbilities": {
+    "dashes": 2,
+    "escaped": true,
+    "sprintTicks": 27,
+    "time": 9.799999999991087
+  },
+  "reactionDelaySeconds": 0.4,
+  "scope": "Controlled flat-ground frontal interception; not engine gameplay or human balance data",
+  "walking": {
+    "caught": true,
+    "dashes": 0,
+    "sprintTicks": 0,
+    "time": 5.399999999995089
+  }
+}

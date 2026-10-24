@@ -1,0 +1,12 @@
+{
+  "checkedOn": "2026-10-19",
+  "provider": "APMOfficial on Roblox Creator Store",
+  "usage": "Stream these assets inside Roblox. Do not redistribute audio files. Original project WAV compositions remain separate and unuploaded.",
+  "robloxAudioDocumentation": "https://create.roblox.com/docs/audio/assets",
+  "tracks": [
+    {"key":"Lobby","title":"Relaxed Scene","audioId":1848354536,"source":"https://create.roblox.com/store/asset/1848354536","mood":"gentle melodic lobby"},
+    {"key":"CrystalGrove","title":"Intense Chase","audioId":1848090337,"source":"https://create.roblox.com/store/asset/1848090337/Intense-Chase","mood":"action pursuit"},
+    {"key":"SunsetRuins","title":"Chaser","audioId":9042664292,"source":"https://create.roblox.com/store/asset/9042664292/Chaser","mood":"dark percussion and driving tribal rhythms"},
+    {"key":"NeonHarbor","title":"Classic Chase","audioId":1837560230,"source":"https://create.roblox.com/store/asset/1837560230/Classic-Chase","mood":"club chase"}
+  ]
+}

@@ -1,0 +1,86 @@
+RIFT STALKER | RIFT VALLEY 0.13.3
+
+An original Temple Run-inspired pursuer built from native Roblox primitives.
+Charcoal body, broad shoulder hump, jagged mane, pale angular mask, glowing green
+eyes, small horns, long forearms, heavy knuckles and six claws form the silhouette.
+Violet role outlines still identify catchers against the decorated maps.
+
+APPLIES TO
+Solo practice: both NPC catchers use the creature body with their existing chase AI.
+Multiplayer: human catchers wear the same model over their normal avatar. The
+outfit hides body parts, face decals and late-loaded accessories, then restores
+their original transparency when the catcher role ends. R6/R15 root attachment
+leaves the original humanoid, collisions, abilities and tag-distance checks intact.
+
+ANIMATION
+Local procedural shoulders, hips, spine and head produce a hunched loping gait.
+The new authored Walk, Run and Sprint cycles use contact/passing/flight key poses.
+Velocity blends locomotion into idle, with jump/fall shapes and a short landing settle.
+Movement velocity blends the run into a subtle idle breathing pose.
+Motor transforms animate cosmetics; server root motion still controls the NPCs.
+Client skips pose updates beyond 180 studs to reduce extra work.
+
+PREVIEW
+assets/catcher-preview.png: front and three-quarter rendering from actual model geometry.
+dist/RiftStalker-Design.rbxm: posed, anchored native model for design inspection.
+The design preview is not a live NPC; the game constructs its live rig at runtime.
+Each live creature uses 50 primitive parts with no external meshes/textures.
+assets/catcher-running.gif previews the native run poses.
+dist/RiftStalker-Animations.rbxm contains three looping KeyframeSequences for the
+NPC skeleton. The game's shared motion sampler already plays these poses without
+uploaded IDs. Import the asset into Studio to inspect/edit sequences if desired.
+
+VALIDATION
+184 checks on the actual creature modules pass, including collider/mass settings,
+joint connectivity, procedural movement, skin reuse, accessory hiding and exact
+avatar restoration. Native engine physics and player replication still need Studio
+playtesting; use the catcher checks in deploy/DEPLOYMENT.txt.
+
+STYLE REFERENCE
+https://imangistudios.com/thegames/temple-run/
+GRAB AND CONSUME | 0.13.0
+Maximum horizontal reach is 4.2 studs with a 3.2-stud vertical allowance. A
+forward rectangle limits lateral reach to 3.1 and depth to 4, with 0.25 behind.
+The visible arms warn for 0.75 seconds while the creature keeps pursuing. The
+final 0.16 seconds commit to a short lunge capped at 3.6 studs and stop short of a
+stationary victim. The server rechecks contact and wall occlusion after the windup.
+Amber bruisers use the volume above; cyan stalkers have a narrower 2.3-stud
+lateral half-width and 3.4-stud forward depth. One creature can threaten a runner
+at a time. Missed attacks cause 1.15 seconds of recovery and runner protection.
+Approved runner dashes give 0.45 seconds of server-side dodge protection, so a
+late replicated position cannot overturn an accepted dodge during that window.
+They immediately cancel a pending reach/lunge and trigger normal miss recovery.
+The four-second dash cooldown and stamina cost remain. Sprint drain is 18 per
+second, giving about 5.6 seconds from full stamina before regeneration or buffs.
+Spatial warning grunts use Roblox's packaged oof.ogg at reduced pitch, with a
+brief exclamation mark, outline and noncolliding contact footprint.
+Charging stalkers appear in course 3: warn for 0.75 seconds, charge in a fixed
+direction for 0.55 seconds, then recover. Ordinary pursuit stays slower than sprint.
+Confirmed contact locks both actors for a short lift/swallow sequence. A local
+whole-avatar proxy moves into the mouth and shrinks uniformly; no body parts
+detach. Server cleanup restores original visibility and turns the runner into a
+catcher. The victim's temporary camera and proxy also clean up on cancellation.
+
+
+0.5.0 added a finite Dash action to the animation model. During approved dashes,
+the creature leans forward and sweeps its arms back with curling wind ribbons.
+Stalker NPCs progress from two to six per section, with a 12-bot split-group budget.
+Native Studio testing must verify NPC navigation and jumping across course gaps.
+
+BONUS-COURSE NAVIGATION | 0.13.0
+Bruiser speed by course: 29/30/31/32/32.5. Walking is 22 and sprint is 34.
+Stalkers in courses 3-5 use 32.25/33/33.5; a warned charge uses 41.
+NPCs and human catchers start at supported stations ahead of arriving runners,
+facing the entry. Initial protection starts after Ready and lasts 2.5 seconds.
+All later portal landings use the same grace. NPCs pursue arrivals immediately;
+the protection gates grabs and charges, rather than movement. Initial paths
+prepare during Get Ready. Portal finishes reconcile the next pack immediately.
+Server validation blocks attacks throughout arrival protection.
+Horizontal waypoint progress accounts for the root sitting above the floor.
+Grounded paths replan on blockage and exclude Unstable-labelled crumble tiles.
+Charges/lunges require stable body-width ground and low-obstacle clearance.
+Recovery invalidates stale routes, clears charge state and delays attacks.
+Direct pursuit now discards the previous path. If support or an obstacle needs
+pathfinding again, compute from the current position instead of doubling back
+to old nodes. Version 0.12.0 Studio tests verified this across all three causeway
+variants. The new 0.13.0 stations and interception balance await a Studio run.

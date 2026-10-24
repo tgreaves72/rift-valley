@@ -1,0 +1,54 @@
+{
+  "originalComposition": true,
+  "sampleRate": 44100,
+  "channels": 2,
+  "uploaded": false,
+  "tracks": [
+    {
+      "key": "Lobby",
+      "title": "Overlook Afterglow",
+      "bpm": 78,
+      "seconds": 49.231,
+      "bytes": 8684352,
+      "peak": 0.82,
+      "rms": 0.185,
+      "file": "assets/music/Lobby.wav",
+      "style": "chill"
+    },
+    {
+      "key": "CrystalGrove",
+      "title": "Glassfang Pursuit",
+      "bpm": 150,
+      "seconds": 38.4,
+      "bytes": 6773804,
+      "peak": 0.82,
+      "rms": 0.135,
+      "file": "assets/music/CrystalGrove.wav",
+      "style": "crystal"
+    },
+    {
+      "key": "SunsetRuins",
+      "title": "Ruin Runners",
+      "bpm": 160,
+      "seconds": 36.0,
+      "bytes": 6350444,
+      "peak": 0.82,
+      "rms": 0.14,
+      "file": "assets/music/SunsetRuins.wav",
+      "style": "tribal"
+    },
+    {
+      "key": "NeonHarbor",
+      "title": "Harbor Overdrive",
+      "bpm": 172,
+      "seconds": 33.488,
+      "bytes": 5907392,
+      "peak": 0.82,
+      "rms": 0.138,
+      "file": "assets/music/NeonHarbor.wav",
+      "style": "neon"
+    }
+  ],
+  "playbackCatalog": "assets/music/credits.json",
+  "customWavsUploaded": false
+}

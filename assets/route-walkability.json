@@ -1,0 +1,152 @@
+[
+  {
+    "cargoOffset": 0,
+    "mapId": "CrystalGrove",
+    "stage": 1,
+    "walkingDistance": 268
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "CrystalGrove",
+    "stage": 2,
+    "walkingDistance": 366
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "CrystalGrove",
+    "stage": 3,
+    "walkingDistance": 314
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "CrystalGrove",
+    "stage": 4,
+    "walkingDistance": 370
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "CrystalGrove",
+    "stage": 5,
+    "walkingDistance": 374
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "SunsetRuins",
+    "stage": 1,
+    "walkingDistance": 268
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "SunsetRuins",
+    "stage": 2,
+    "walkingDistance": 366
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "SunsetRuins",
+    "stage": 3,
+    "walkingDistance": 314
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "SunsetRuins",
+    "stage": 4,
+    "walkingDistance": 370
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "SunsetRuins",
+    "stage": 5,
+    "walkingDistance": 374
+  },
+  {
+    "cargoOffset": -5,
+    "mapId": "NeonHarbor",
+    "stage": 1,
+    "walkingDistance": 268
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "NeonHarbor",
+    "stage": 1,
+    "walkingDistance": 268
+  },
+  {
+    "cargoOffset": 5,
+    "mapId": "NeonHarbor",
+    "stage": 1,
+    "walkingDistance": 268
+  },
+  {
+    "cargoOffset": -5,
+    "mapId": "NeonHarbor",
+    "stage": 2,
+    "walkingDistance": 348
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "NeonHarbor",
+    "stage": 2,
+    "walkingDistance": 348
+  },
+  {
+    "cargoOffset": 5,
+    "mapId": "NeonHarbor",
+    "stage": 2,
+    "walkingDistance": 348
+  },
+  {
+    "cargoOffset": -5,
+    "mapId": "NeonHarbor",
+    "stage": 3,
+    "walkingDistance": 310
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "NeonHarbor",
+    "stage": 3,
+    "walkingDistance": 306
+  },
+  {
+    "cargoOffset": 5,
+    "mapId": "NeonHarbor",
+    "stage": 3,
+    "walkingDistance": 306
+  },
+  {
+    "cargoOffset": -5,
+    "mapId": "NeonHarbor",
+    "stage": 4,
+    "walkingDistance": 370
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "NeonHarbor",
+    "stage": 4,
+    "walkingDistance": 370
+  },
+  {
+    "cargoOffset": 5,
+    "mapId": "NeonHarbor",
+    "stage": 4,
+    "walkingDistance": 370
+  },
+  {
+    "cargoOffset": -5,
+    "mapId": "NeonHarbor",
+    "stage": 5,
+    "walkingDistance": 374
+  },
+  {
+    "cargoOffset": 0,
+    "mapId": "NeonHarbor",
+    "stage": 5,
+    "walkingDistance": 374
+  },
+  {
+    "cargoOffset": 5,
+    "mapId": "NeonHarbor",
+    "stage": 5,
+    "walkingDistance": 374
+  }
+]

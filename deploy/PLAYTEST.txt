@@ -1,0 +1,183 @@
+RIFT VALLEY 0.15.0 | PLAYTEST SESSION
+
+Use 5-10 new players across computer and touch devices. Watch their first run
+without explaining the controls. These are proposed test goals, not measured results.
+
+1. FIRST MINUTE
+Can the player find the route, learn sprint/dash from the short prompts, and
+reach the first finish without help? Note the first moment of confusion.
+Every next-match lobby lasts 30 seconds; Ready lasts 3 seconds, including solo.
+Run Again must not skip or restart the lobby countdown.
+
+2. FAIR CONTACT
+Ask players to try standing still, walking away, sprinting, dashing sideways
+and jumping. They should see/hear the warning before capture. A missed grab
+gives the monster a recovery pause and the runner brief protection.
+Bruisers have amber eyes and pursue at 29/30/31/32/32.5 by course. Cyan stalkers
+pursue at 32.25/33/33.5 in courses 3-5, below sprint speed 34. They have cyan eyes,
+a planted warning and a committed straight charge. Introduce them in course 3.
+Test two monsters reaching one runner so attacks never overlap against that runner.
+
+3. ROUTE CHOICES
+Walk the alternating mint-edged crossings through Broken Causeway and Rift Gauntlet.
+Try the shorter central route and its gold bonus crystals. Inspect every junction.
+Grove bridges grant a short speed boost. Ruins stones flash before disappearing
+and restore after three seconds. Harbor cargo moves sideways; wide passages remain.
+Check these interactions with default jumps and touch controls in Studio physics.
+
+4. REPLAY AND FIRST REWARD
+Lose a solo run: the next run follows the full 30-second lobby and Ready.
+Run Again can skip results but cannot bypass the queue. Lobby pauses enrollment;
+Play rejoins the next run when its countdown ends.
+Finish three legitimate courses, including solo, to unlock Rift Scout. If the
+title slot was empty, it equips automatically. An existing title stays selected.
+Solo earns half base coins/XP and course progress; it never grants competitive
+wins/tags or paid Double Coins multipliers. Live profile persistence needs Roblox.
+Finish all five: return to the supported lobby and use parkour while others finish.
+
+5. COLLECT EVIDENCE
+Open View > Output in Studio and filter for [RiftPlaytest] in the server output.
+Reports appear after each round and at shutdown. They aggregate starts, course
+finishes, escapes, retries, dodges, falls/catches by course and departure course.
+They also show average first-course completion time since joining.
+Every 30 seconds the client submits an averaged frame-rate sample. The server
+validates/rate limits samples and separates touch and desktop averages. These
+are client-reported observations, not authoritative performance measurements.
+Reports contain no player names or user IDs. They remain in server Output.
+Manually record unclear captures and device issues in the supplied CSV.
+
+6. TUNE FROM OBSERVATION
+Prioritize unexplained deaths, unsupported ground, obstructed cameras and missed
+touch inputs. Then adjust stamina, monster speed and obstacle spacing one at a
+time. Compare the next group against the previous group before adding difficulty.
+Test 2, 4 and eventually 30 players. Offline checks do not reproduce Roblox
+physics, real NPC pathfinding, network latency or mobile device performance.
+
+7. BONUS-COURSE REGRESSION
+Enter courses 2-5 on all three themes. Catchers should head toward you immediately
+during the 2.5-second safe arrival, without attacking until protection expires.
+They should keep pressure while running, advance past floor waypoints, jump
+hurdles once and take supported routes around gaps and crumbling shortcuts.
+Dodge charges toward gaps and moving cargo; catchers must stop before losing
+support, then resume pursuit. Force a fall and observe stable recovery without
+a lingering charge or immediate grab. Test split multiplayer groups too.
+Mint battery icons restore stamina only; cyan wind icons reset dash only.
+Both should show glowing solid 3D artwork with no labels or BillboardGui.
+Collect each while its resource is depleted; verify separate seven-second
+cooldowns and local dimming, then restoration when the resource is ready.
+
+8. RIFT MASTERY AND PRACTICE
+Open Mastery from the menu and the garden gateway. Verify locked course buttons
+until that course has been reached in a real run. Check all three themes and
+phone portrait/landscape. Browsing should pause solo replay; Play resumes it.
+In multiplayer, let one player practice while others race. Main round changes
+must not move the trainee or reset their clock/hazards. Main catchers cannot
+capture trainees. Practice has no chasers and awards no race rewards or medals.
+Falls and Retry should restore entry and full movement resources. Finish once:
+check the separate practice best, frozen timer and single result card. Leave:
+return to the lobby; when the final trainee leaves, remove that course copy.
+Run every selected theme/course in Studio to verify physical support and camera
+visibility in the isolated layers. Check the connected map score and crossfade.
+
+9. MEDALS AND EARNED STYLES
+Time race courses from movement unlock, excluding Ready. Compare recorded time
+with a stopwatch. Finish at/slower/faster than silver and gold targets. Replay:
+best times and highest medals must never decrease or award duplicate points.
+Try to forge a finish via a remote or teleport; no medal should result.
+Complete three/five distinct courses in a theme to unlock its trail/skin.
+Earn 6 points, 5 silver-or-gold medals, and 5 gold medals for the victory styles.
+Equip each skin and compare reach, warning-eye color and movement with default.
+Win with each victory effect, including simultaneous winners on mobile. Check
+that effects remain local, brief, noncolliding and capped. Test real save/rejoin
+after private publishing; Studio intentionally retains session-only progress.
+Use observed beginner and skilled-player times to tune provisional gold/silver
+targets. Record median times and failure causes before changing difficulty.
+
+10. COURSE VARIETY, DETAIL AND PRESSURE
+Run all 15 course/theme pairs. Compare Shattered Steps' hurdles/raised shortcut,
+Serpent Slalom's split routes, Broken Causeway's alternating crossings and Rift
+Gauntlet's combined weave/jump sections. Hugging one edge must not bypass them.
+Walk the supported detours, then try the quicker jumping route. Confirm normal
+avatar jumps reach each shortcut and that missed later-course jumps can fall.
+Inspect trees, fungi, columns, banners, cranes, cables and surface detail from
+player height. Decorative geometry must leave lanes, buffs and cameras readable.
+Watch Harbor cargo at both extremes. Test multiple catchers following a turning
+player; offline route checks do not prove engine navmesh or jumping behavior.
+Try walking without abilities, waste stamina/dash, then use them deliberately.
+Catchers should punish slow or wasteful play while allowing skilled escape.
+Check catchers start ahead, face entry and pursue immediately during protected
+arrivals. Ready prepares paths without moving them. They cannot grab until 2.5
+seconds after Ready ends. Catch warnings,
+cover and successful dodge protection must still work.
+Buff models must gently bob without rotating, keep their collection anchor fixed,
+and show native neon/glow even without resource GUI. Compare two players: one
+on cooldown sees dim models while the other's available buffs stay bright.
+Practice the same layouts and verify real movement support in every theme.
+Load a revision-1 mastery fixture: retain medals/unlocks/cosmetics, archive old
+race/practice PBs, then record fresh times on revision 2 without duplicate medals.
+Record human times before tuning the revised provisional medal targets.
+
+11. EXTENDED LOBBY PARKOUR AND QUEUE
+Verify the spawn has no confetti icon. Completing parkour and victory effects
+may still celebrate automatically. Start Rift Ascent and land on all 24 stones
+in order. Inspect its narrow beams, small pads, upper loop and open finish, with no return icon.
+Fall after stones 5, 11, 17 and 23: the attempt ends. Retry returns to the
+entry plate and starts a new timer on landing. Do not award completion for stepping on a later stone early.
+The existing ceiling must clear the final running jump and camera. Check a race
+starting mid-lap leaves the active parkour session and timer uninterrupted.
+Count the 30-second lobby before the first and following matches, including solo.
+Press Run Again repeatedly: the queue must keep its original deadline. Verify
+map voting remains available while waiting and Pause/Play preserve earned items.
+Version 0.12.0 automated Studio tests covered engine traversal and individual
+jumps. Repeat with the current test copies before treating this release as engine
+verified. Add human/mobile observations for landings, camera views and difficulty.
+
+12. PHYSICAL PLATES AND AMBIENCE
+Step on all three map plates while grounded. Confirm one shared vote per player,
+vote changes when entering another plate, and the Maps menu has no vote buttons.
+The Next Map sidebar must show the same three shared totals for every waiting
+player and mark each player's own selection. Vote changes/departures update it.
+Check portrait, small-phone and landscape layouts; open menus and race start
+hide it. Inspect the floating crystal/temple/anchor emblems from all sides:
+small map names remain visible without a board or pole. The selected emblem
+brightens locally. Neither map nor resource icons should rotate.
+Walking beneath an emblem must not affect collision or pressure-plate activation.
+Regular and shortcut coin pickups should be round golden 3D models with glowing
+rims and a rift mark on both faces. Their server anchors stay still; collection
+hides the model/light for the collector without changing another player's coin.
+Sunset Ruins must not display the CRACKING STONES sign.
+Keep standing through the next queue: the selected plate should count again.
+Walk onto parkour entry: the clock starts once. Holding still must not reset it.
+Hear the calm lobby track, each intense map score, and a smooth return after
+escape or practice exit. Check mute, two simultaneous player roles and audio
+loading errors. Confirm drifting auroras, twinkling stars and floating shards
+stay decorative and leave the courses visible on phone and desktop.
+
+13. QUIETER COURSE FEEDBACK
+Clear courses 1-4: no medal card, Next Course notice or repeated pickup text
+should cover the next route. Course dots, coins, stamina and dash meters still
+update. Earn Rift Scout during a run: the title equips without a popup.
+Practice and final race finishes show a small medal/time badge for 3/2.5 seconds.
+Check phone portrait, landscape and desktop: badge clears movement, practice and
+replay controls. Real action failures and round results still show compact notices.
+Open Mastery and Shop afterward: records, medals and earned styles must remain.
+
+14. LAUNCH FEATURES AND HUMAN MULTIPLAYER
+Use at least two human players on separate devices after private publishing.
+Studio client simulations do not constitute this human playtest.
+One player completes Learn to Run while others race. Verify jump, real sprint
+travel and an approved dash are required, and Skip returns safely to the lobby.
+Check six side buttons and the optional invitation on phone portrait/landscape.
+Record a legitimate 24-step parkour best, leave/rejoin, and replay it as a ghost.
+Only its owner should see it; the ghost must never collide or affect timing.
+A slower attempt must preserve the best. Check the free Ascent Ace title unlock.
+Complete a daily goal, verify one fixed reward, then rejoin and repeat the
+action: no second reward. Observe a UTC day rollover, preserving other progress.
+Inspect catcher floor outlines during a real chase, a dodge and a canceled grab.
+Two VIP owners should spar in the arena while a non-owner races. Confirm 25
+damage per approved shot, cover blocking and no gear effects outside the arena.
+Play all three maps with at least two runners. Verify split course progression,
+finisher lobby access, late joiners, captures, respawns and disconnect cleanup.
+Record actual human counts, device, map, confusing captures and pass/fail in the
+observation sheet. Do not mark human testing passed from automated clients.
+After publishing, check Analytics dashboard delivery. Studio sends no events.

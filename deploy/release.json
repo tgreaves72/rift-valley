@@ -1,0 +1,438 @@
+{
+  "name": "Rift Valley",
+  "version": "0.15.0",
+  "stage": "public-16-plus",
+  "description": "Run to Finish! Five rifts stand between you and escape.\n\nSprint, jump and wind-dash through Rift Valley while hulking creatures chase you. Weave through split routes, climb raised shortcuts and jump broken causeways. Time your sprint and wind-dash to stay ahead, dodge warned grabs and collect glowing 3D battery and wind buffs. Amber-eyed bruisers pursue you; cyan-eyed stalkers plant, charge and recover. Finish every course before time runs out.\n\nVote for Crystal Grove's glowing forests and boost bridges, Sunset Ruins' carved temples and crumbling stones, or Neon Harbor's cranes and moving cargo. Each finish opens the next course with a protected landing, full stamina and dash ready. Get caught or fall and join the catchers. Finishers can enjoy the lobby while others continue.\n\nEarn coins and unlock trails, halos, auras and titles. Complete three courses to earn Rift Scout. Solo runs earn reduced coins/XP and course progress, with quick retries and a Lobby option to take a break. Competitive wins and tags come from multiplayer.\n\nExplore the rift gardens, floating parkour, fountain and glowing night sky. Valley VIP adds a styled sky lounge, exclusive cosmetics and a separate activity arena with speed/jump coils and an energy blaster. Gear works only in the VIP Arena. Double Coins boosts multiplayer coin earnings; Prism Trail Pack adds animated trails. Everyone shares the same movement abilities.\n\nControls: Shift / L3 / hold Sprint. Q / B / tap Dash. Space / A / Jump. Follow the short prompts during your first run.\n\nRift Mastery: earn bronze, silver and gold medals, beat your best times and unlock themed trails, catcher skins and victory effects. Practice reached courses with instant retries and separate practice records.\n\nLearn to Run in the optional training lane. Complete rotating daily goals for free coins, race your personal-best parkour ghost and earn the Ascent Ace title.",
+  "maxPlayers": 30,
+  "devices": [
+    "computer",
+    "phone",
+    "tablet",
+    "console"
+  ],
+  "placeBinary": "dist/RiftValley.rbxl",
+  "placeXML": "dist/RiftValley.rbxlx",
+  "thumbnail": "assets/launch-thumbnail-v2.png",
+  "icon": "assets/launch-icon.png",
+  "contentNotes": {
+    "violence": "Stylized monster capture and whole-avatar swallow without blood; energy blaster and sparring enemies deal health damage in the separate VIP activity arena. Parkour allows real falls.",
+    "paidItems": true,
+    "randomPaidItems": false,
+    "externalLinksInGame": false,
+    "voiceChatRequired": false
+  },
+  "reference": "https://www.roblox.com/games/107535308163741/Huss-Valley",
+  "artwork": "Original native-geometry game icon and pass icons. New chase thumbnail generated with the built-in image generator, approved by the user and uploaded to Creator Hub.",
+  "monetization": {
+    "catalog": "deploy/gamepasses.json",
+    "instructions": "deploy/MONETIZATION.txt",
+    "configured": true,
+    "requires": [
+      "Genuine purchase, cancellation and rejoin ownership verification by an authorized tester"
+    ],
+    "salesEnabled": true,
+    "publicStoreVerified": true,
+    "publicationRecord": "deploy/pass-publication.json",
+    "validationRecord": "deploy/monetization-update-validation.json"
+  },
+  "deployment": {
+    "published": true,
+    "requestedOwnerUsername": "tgtopbigt",
+    "requestedOwnerUploadComplete": true,
+    "publicAccessEnabled": true,
+    "publicReleaseConfirmedUTC": "2026-10-23T22:54:58Z",
+    "minimumAudienceAge": 16,
+    "contentMaturityLabel": "Content May Vary",
+    "friendsOnly": false,
+    "serverSizeConfigured": true,
+    "artworkUploaded": true,
+    "homeThumbnailActive": true,
+    "publicReleaseStatus": "Confirmed in Creator Hub after the user completed the age check: available to players ages 16+, Public selected, Friends unchecked. Wider audience requirements remain incomplete.",
+    "ownerUsername": "tgtopbigt",
+    "universeId": "10772509045",
+    "placeId": "86531279798778",
+    "gameUrl": "https://www.roblox.com/games/86531279798778/Rift-Valley",
+    "publicationRecord": "deploy/publication.json",
+    "requires": [
+      "Human multiplayer and device playtests",
+      "Live saves, genuine purchases and analytics verification"
+    ],
+    "openCloudEnvironment": [
+      "ROBLOX_UNIVERSE_ID",
+      "ROBLOX_PLACE_ID",
+      "ROBLOX_OPEN_CLOUD_API_KEY"
+    ],
+    "defaultPublishScriptMode": "dry-run",
+    "cloudPublishedVersion": 3,
+    "lastUpdateConfirmedUTC": "2026-10-23T23:38:58Z"
+  },
+  "audio": {
+    "catalog": "assets/music/credits.json",
+    "instructions": "deploy/MUSIC.txt",
+    "assetIdsConfigured": true,
+    "provider": "APMOfficial Creator Store releases",
+    "originalCompositions": "assets/music/catalog.json",
+    "originalWavsUploaded": false,
+    "requires": [
+      "Verify catalog playback in the published experience"
+    ],
+    "nativeLoadingVerified": true,
+    "nativeLoadingEvidenceVersion": "0.13.3"
+  },
+  "continuousChase": {
+    "courses": 5,
+    "runSeconds": 150,
+    "individualGateProgression": true,
+    "stalkersPerCourse": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "activeBotBudget": 12,
+    "coursePreview": "assets/route-choices-preview.png",
+    "introCourseContinuousGround": true,
+    "laterGapWarnings": true,
+    "portalProtectionSeconds": 2.5,
+    "safeDetours": true,
+    "bonusShortcutCrystalsPerCourse": 2,
+    "earlyCoursesTeachMovement": true,
+    "supportedDetourPattern": "alternating sides with supported junctions; no straight perimeter lane",
+    "initialProtectionAfterReady": true
+  },
+  "lobby": {
+    "publicAreaSquareStuds": 22560,
+    "previousPublicAreaSquareStuds": 8320,
+    "areaMultiplier": 2.712,
+    "gardenPlazaSize": [
+      144,
+      96
+    ],
+    "usableSeats": 12,
+    "floweringTreesAdded": 8,
+    "hangingLanterns": 34,
+    "decorativeFloatingIslands": 4,
+    "preview": "assets/lobby-preview.png",
+    "parkourSteps": 24,
+    "parkourCheckpoints": [],
+    "spawnConfettiIcon": false,
+    "parkourFinishHeight": 76,
+    "mapSelection": "3 physical pressure plates",
+    "parkourEntry": "physical pressure plate with glowing 3D stopwatch",
+    "remoteVotesRequireStandingOnPlate": true,
+    "mapVotingDisplay": {
+      "liveSidebar": true,
+      "allThreeCounts": true,
+      "personalChoiceMarker": true,
+      "visibleDuringOpenLobbyVoting": true,
+      "mapEmblems": [
+        "crystal cluster",
+        "temple",
+        "anchor"
+      ],
+      "native3D": true,
+      "blockingSignboardsRemoved": true,
+      "physicalPlatesRetained": true,
+      "mapNamesRetained": true,
+      "iconsRotate": false
+    },
+    "destinations": {
+      "shop": "Native 3D mint shopping bag with gold handles and rift gem",
+      "vip": "Native 3D purple portal and gold crown",
+      "stationary": true,
+      "overheadNames": true,
+      "backingBoards": false,
+      "sideButtons": [
+        "Shop",
+        "VIP"
+      ],
+      "ownershipCheckedOnServer": true
+    },
+    "parkourMilestoneBeacons": [
+      6,
+      12,
+      18
+    ],
+    "parkourDeathRetry": "click to return to the plate, including a queued retry during respawn",
+    "parkourReturnIcons": false,
+    "parkourInstructionBoard": false,
+    "protectedPerimeterSegments": 29,
+    "parkourOuterEdgesOpen": true,
+    "activeActivitiesExcludedFromRaceSelection": true
+  },
+  "cosmetics": {
+    "catalog": "deploy/COSMETICS.txt",
+    "newUnlockableItems": 12,
+    "coinUnlocks": 3,
+    "goalUnlocks": 7,
+    "vipUnlocks": 2,
+    "independentSlots": [
+      "Aura",
+      "Title"
+    ],
+    "oldProfilesPreserved": true,
+    "masteryEarnedItems": 9
+  },
+  "vipLounge": {
+    "preview": "assets/vip-preview.png",
+    "usableSeats": 7,
+    "accentLights": 6,
+    "styleStudio": true,
+    "requiresVerifiedVip": true,
+    "overheadName": "VIP Lounge",
+    "activityArena": {
+      "native3DDisplays": [
+        "Speed Coil",
+        "Jump Coil",
+        "Rift Blaster"
+      ],
+      "verifiedOwnershipRequired": true,
+      "gearScope": "VIP activity arena only",
+      "speedCoilWalkSpeed": 38,
+      "jumpCoilPower": 72,
+      "blasterDamage": 25,
+      "blasterCooldownSeconds": 0.45,
+      "blasterRange": 120,
+      "enemies": 2,
+      "enemyHealth": 100,
+      "enemySpeed": 10,
+      "enemyDamage": 10,
+      "enemyRespawnSeconds": 5,
+      "paidGearChangesRaceOrParkourAbilities": false,
+      "pvpRewards": false
+    }
+  },
+  "hud": {
+    "objective": "Run to Finish!",
+    "font": "FredokaOne",
+    "courseProgressDots": 5,
+    "automaticHelp": false,
+    "preview": "assets/hud-desktop-preview.png"
+  },
+  "chaseDesign": {
+    "grabWarningSeconds": 0.75,
+    "maximumCommittedLungeStuds": 3.6,
+    "missRecoverySeconds": 1.15,
+    "singleAttackerPerRunner": true,
+    "archetypes": [
+      "Bruiser",
+      "Stalker"
+    ],
+    "chargingStalkerFirstCourse": 3,
+    "warningSound": "packaged Roblox oof.ogg at reduced pitch",
+    "mapMechanics": [
+      "Grove bridge boost",
+      "Ruins warned crumble",
+      "Harbor moving cargo"
+    ],
+    "bonusCoursePursuit": {
+      "bruiserSpeeds": [
+        29,
+        30,
+        31,
+        32,
+        32.5
+      ],
+      "stalkerSpeeds": [
+        32.25,
+        33,
+        33.5
+      ],
+      "playerSprintSpeed": 34,
+      "targetsProtectedArrivals": true,
+      "attackProtectionPreserved": true,
+      "stableChargeCorridors": true,
+      "horizontalWaypointProgress": true,
+      "blockedPathReplanning": true,
+      "avoidUnstableTiles": true,
+      "stalkerCourses": [
+        3,
+        4,
+        5
+      ],
+      "playerWalkSpeed": 22,
+      "directToPathTransitionDiscardsOldNodes": true
+    },
+    "initialNpcSpawnsBehindRunners": false,
+    "humanDifficultyTuned": false,
+    "grabLungeSeconds": 0.16,
+    "sprintDrainPerSecond": 18,
+    "runnerDashDodgeSeconds": 0.45,
+    "approvedDashInterruptsPendingGrab": true,
+    "forwardInterceptionStations": "Rules.catcherStation supplies supported stations in all five courses",
+    "guardsStationDuringArrivalProtection": false,
+    "initialPathPreparationDuringReady": true,
+    "courseTransitionRosterDelayRemoved": true
+  },
+  "pacing": {
+    "intermissionSeconds": 30,
+    "readySeconds": 3,
+    "resultsSeconds": 4,
+    "soloResultsSeconds": 2,
+    "pauseAndResumeSolo": true,
+    "soloUsesFullQueue": true,
+    "retrySkipsQueue": false
+  },
+  "soloRewards": {
+    "baseCoinAndXpScale": 0.5,
+    "courseProgress": true,
+    "competitiveWinsAndTags": false,
+    "doubleCoinsMultiplier": false,
+    "firstTitle": "Rift Scout",
+    "firstTitleCourseGoal": 3
+  },
+  "playtest": {
+    "instructions": "deploy/PLAYTEST.txt",
+    "worksheet": "deploy/playtest-observations.csv",
+    "reports": "Server Output [RiftPlaytest]",
+    "frameRateSamples": "client-reported, separated by touch/desktop",
+    "humanSessionCompleted": false,
+    "studioEngineChecks": "deploy/studio-test-results.json",
+    "automatedNavigationAndJumpsPassed": 0,
+    "automatedFullGameEscapesPassed": 0,
+    "walkingBaselineCaught": true,
+    "currentStudioStatus": "Incomplete: native three-client testing demonstrated full Crystal Grove and Sunset Ruins escapes and reached course four on Neon Harbor before interruption. All 38 offline suites pass. Human testing, live saves/purchases and analytics delivery remain pending.",
+    "previousBuildEvidence": "deploy/history/studio-test-results-0.13.3.json",
+    "nativeCatcherStartupObservations": 0,
+    "maximumCatcherStartupSeconds": null,
+    "activityStudioEvidence": "deploy/activity-studio-results.json",
+    "multiplayerStudioEvidence": "deploy/multiplayer-studio-results.json",
+    "nativeClientsTested": 3
+  },
+  "pickups": {
+    "staminaIcon": "mint battery",
+    "dashIcon": "cyan wind chevrons",
+    "floatingNames": false,
+    "distinctResourceRewards": true,
+    "independentCooldownSeconds": 7,
+    "onwardPickupsInsideRace": true,
+    "preview": "assets/pickup-icons-preview.png",
+    "native3D": true,
+    "floatingResourceGUI": false,
+    "glowLights": true,
+    "cosmeticBobAndSpin": false,
+    "cooldownDimmingPerPlayer": true,
+    "animationDistanceStuds": 90,
+    "maximumPartsPerVisual": 26,
+    "coinModels": true,
+    "coinModelsPerLiveScene": 18,
+    "iconsRotate": false,
+    "collectionAnchorsStationary": true,
+    "cosmeticBob": true
+  },
+  "mastery": {
+    "instructions": "deploy/MASTERY.txt",
+    "courseThemePairs": 15,
+    "maximumMedalPoints": 45,
+    "separatePracticeBests": true,
+    "serverTimed": true,
+    "provisionalMedalTargets": true,
+    "requiresHumanTuning": true,
+    "newEarnedTrails": 3,
+    "newEarnedSkins": 3,
+    "newEarnedVictoryEffects": 3,
+    "isolatedPractice": true,
+    "practiceHasChasers": false,
+    "practiceAwardsRaceProgress": false,
+    "practiceMaxSharedCopies": 15,
+    "practiceCountdownSeconds": 1,
+    "menuPreview": "assets/hud-mastery-phone-preview.png",
+    "finishCardPreview": "assets/hud-mastery-finish-preview.png",
+    "layoutRevision": 2,
+    "previousBestsArchived": true,
+    "existingMedalsAndUnlocksPreserved": true,
+    "goldSeconds": [
+      12,
+      15,
+      17,
+      18,
+      20
+    ],
+    "silverSeconds": [
+      20,
+      25,
+      29,
+      33,
+      35
+    ],
+    "native3DMenuViewports": 6,
+    "worldTrophy": true,
+    "worldBoardRemoved": true
+  },
+  "mapDetail": {
+    "preview": "assets/map-details-preview.png",
+    "themeCoursePairs": 15,
+    "grove": [
+      "layered crowns",
+      "roots",
+      "luminous fungi",
+      "crystal tips",
+      "moss",
+      "canopies"
+    ],
+    "ruins": [
+      "carved columns",
+      "broken lintels",
+      "banners",
+      "runes",
+      "engraved stone"
+    ],
+    "harbor": [
+      "cranes",
+      "cables",
+      "floodlights",
+      "crates",
+      "gantries",
+      "deck grates"
+    ],
+    "openSceneryViews": true,
+    "coursePatterns": [
+      "alternating hurdles and raised shortcuts",
+      "tall baffles and split routes",
+      "offset causeways and alternating crossings",
+      "combined weave, hurdles and jump cuts"
+    ],
+    "decorativeWordBoards": false,
+    "movementSigns": false,
+    "gapGuidance": "Amber floor edges and finish beacon"
+  },
+  "visualAmbience": {
+    "driftingAuroras": true,
+    "twinklingStars": true,
+    "floatingShardMotion": true,
+    "personalBiomeColors": true,
+    "updateRateHz": 10,
+    "starUpdatesPerTick": 4
+  },
+  "notifications": {
+    "routineCoursePopups": false,
+    "pickupPopups": false,
+    "intermediateMedalCards": false,
+    "finishBadgeSize": [
+      248,
+      56
+    ],
+    "finishBadgeDurationSeconds": 2.5,
+    "practiceBadgeDurationSeconds": 3,
+    "medalsAndBestsSaved": true
+  },
+  "launchFeatures": {
+    "optionalTraining": [
+      "jump",
+      "sprint",
+      "dash"
+    ],
+    "tutorialEntry": "lobby pressure plate or Goals panel",
+    "tutorialIsolatedFromRaces": true,
+    "attackOutline": "same shared reach limits as server contact test",
+    "dailyGoals": 3,
+    "dailyReset": "00:00 UTC",
+    "dailyRewards": "fixed free coins, automatically awarded once",
+    "parkourGhost": "owner-only translucent server-recorded personal best",
+    "ghostRecordMaxSeconds": 120,
+    "freeParkourTitle": "Ascent Ace",
+    "analytics": "server-only Roblox onboarding funnel and progress/failure/departure custom events",
+    "analyticsLiveDeliveryTested": false
+  }
+}

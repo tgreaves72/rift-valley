@@ -1,0 +1,60 @@
+RIFT VALLEY COSMETICS | 0.15.0
+
+Open Shop > Style Unlocks to see the collection, progress requirements and prices.
+Equip one aura and one title alongside your existing trail. No Aura and No Title
+remove those items at no charge. Customize between matches.
+
+COIN UNLOCKS
+Rift Sparks aura: 120 coins. Six mint crystal sparks surround the avatar.
+Moon Halo aura: 480 coins. A pale blue ring floats above the avatar.
+Night Wanderer title: 250 coins. Blue NIGHT WANDERER lettering above your name.
+
+GOAL UNLOCKS
+Ascent Ace title: finish all 24 Rift Ascent platforms in one valid attempt.
+Rift Scout title: complete 3 courses, including legitimate solo completions.
+Valley Bloom aura: complete 10 courses.
+Valley Survivor title: win 1 match.
+Rift Crown aura: win 5 matches.
+Rift Legend title: win 15 matches.
+Rift Hunter title: land 10 successful tags as a human catcher.
+Goal items become available without a coin charge. Select Equip after unlocking.
+Rift Scout equips automatically on its first unlock if the title slot is empty.
+The shop shows current progress. Existing saved wins, tags and course completions
+count toward these goals. Solo earns half base coins/XP and course progress; competitive wins/tags stay multiplayer-only.
+
+VALLEY VIP
+Royal Halo aura: champagne-gold crown with four raised points.
+Valley Royalty title: gold VALLEY ROYALTY lettering.
+These accompany the Gold trail, VIP badge and styled sky lounge.
+VIP requires Roblox-verified ownership. The user has not published the experience
+or supplied a real pass ID, so sales remain disabled until the pass is connected.
+The VIP lounge style studio opens this same collection through its hovering icon.
+The collection is also available to everyone from the public Shop menu.
+
+HOW THEY WORK
+The server checks balance, goals, role/phase and pass entitlement before equipping.
+Coin purchases persist; equipping an owned item never charges twice.
+One aura and one title use independent slots and persist through rejoin.
+The existing profile store name stays unchanged and older profiles migrate with
+empty new cosmetic slots, preserving their coins, stats and trails.
+Goal eligibility derives from saved progress. Paid ownership never comes from a
+saved flag or a client claim. A saved VIP selection requires verified ownership
+before it appears again.
+
+Native modeled auras contain 6-16 massless, noncolliding, nonqueryable parts.
+They follow the avatar with welds and require no uploaded image or animation IDs.
+Catchers keep their cosmetics with extra clearance around the creature body.
+Capture removes the adornments for the cinematic, then catcher conversion restores
+eligible selections. Role changes and respawns rebuild the selected appearance.
+Cosmetics add no speed, stamina, dash power, hitbox size or catching range.
+
+VERIFICATION
+Offline tests cover prices, repeated equip, insufficient coins, locked goals,
+milestone boundaries, old-profile migration, rejoin persistence and VIP authority.
+Native-geometry tests verify aura assembly flags, part limits, title lettering,
+costume compatibility and cleanup. Studio playtesting must check actual avatar
+appearance, camera views, chair interaction and live replication.
+
+MASTERY COSMETICS
+See MASTERY.txt: nine earned rewards, including independent Skin and Victory
+slots. All unlock from race medals and change appearance only.

@@ -1,0 +1,93 @@
+-- Actual game lifecycle and authority, controlled time/avatars. No engine physics.
+local r = require("@lune/roblox")
+local Config = require("../src/shared/Config")
+local h = require("./match-host")(1)
+local player = h.players[1]
+local profile = h.profiles[player]
+local replicated = h.host.replicated
+local function root() return player.Character.HumanoidRootPart end
+local count = 0
+local function check(value, message) assert(value, message) count += 1 end
+local function awaitPhase(target)
+	for _ = 1, 220 do if replicated:GetAttribute("Phase") == target then return end h.tick(.2, true) end
+	error("phase did not reach " .. target)
+end
+awaitPhase("Crossing")
+check(replicated:GetAttribute("Practice"), "solo starts after lobby and Ready countdown")
+check(h.now() >= 1033 and h.now() < 1035, "first run waits thirty seconds plus Ready")
+local startMap = replicated:GetAttribute("MapId")
+check(h.host.workspace:FindFirstChild("Rift Stalker 1/1"):GetAttribute("Archetype") == "Bruiser", "first course introduces the slower bruiser")
+local function finish()
+	local stage = player:GetAttribute("CourseStage")
+	local steps = 0
+	while player:GetAttribute("CourseStage") == stage and player:GetAttribute("Role") == "Runner" do
+		root().CFrame += r.Vector3.new(0, 0, 2)
+		h.tick(.1, false)
+		steps += 1 assert(steps < 180, "finish did not advance")
+		if player:GetAttribute("Role") == "Escaped" then break end
+	end
+end
+finish()
+local firstRecord = profile.Mastery.Races[startMap .. "_1"]
+check(firstRecord and firstRecord.bestMs < 14000 and firstRecord.medal >= 1,"course timer excludes the lobby and Ready countdown and grants a chase medal")
+check(player:GetAttribute("UnlockedCourse") == 2 and player:GetAttribute("Best_" .. startMap .. "_1"),"course entry unlocks training and replicates the authoritative personal best")
+check(profile.Crossings == 1 and profile.Coins >= math.floor(Config.CrossingCoins*.5), "legitimate solo course pays reduced coins and counts toward cosmetics")
+check(player:GetAttribute("SafeUntil") > h.now()+2.3, "portal gives protected landing time")
+finish()
+h.tick(3, false)
+local stalker = h.host.workspace:FindFirstChild("Rift Stalker 3/2")
+check(stalker and stalker:GetAttribute("Archetype") == "Stalker", "charging archetype appears after early learning courses")
+local target = root().Position
+stalker.HumanoidRootPart.CFrame = r.CFrame.new(target+r.Vector3.new(0, 0, 20))
+h.tick(.1, false)
+check(stalker:GetAttribute("ChargeStage") == "Warning" and stalker.Humanoid.WalkSpeed == 0, "stalker visibly plants before charging")
+root().CFrame += r.Vector3.new(8, 0, 0)
+h.tick(Config.ChargeWindup+.01, false)
+check(stalker:GetAttribute("ChargeStage") == "Charge" and stalker.Humanoid.WalkSpeed == 41, "charge follows a timed warning")
+check(stalker.HumanoidRootPart.CFrame.LookVector.Z < -.99, "dodging sideways does not steer the committed charge")
+h.tick(Config.ChargeDuration+.01, false)
+check(not stalker:GetAttribute("ChargeStage") and stalker.Humanoid.WalkSpeed == 0, "charge ends in a punishable recovery pause")
+stalker.HumanoidRootPart.CFrame = r.CFrame.new(-230, 4, 0)
+finish()
+check(profile.Crossings == 3 and profile.TitleEquipped == "CrystalScout", "three solo courses unlock and equip first title when slot is empty")
+finish() finish()
+check(player:GetAttribute("Role") == "Escaped" and root().Position.Y > Config.LobbyFloorY, "winner returns to supported lobby ground")
+h.tick(.1, false)
+check(player.Character:FindFirstChildOfClass("Humanoid").WalkSpeed > 0, "finisher can use the lobby while others finish")
+h.tick(.2, true)
+check(replicated:GetAttribute("Phase") == "Results", "solo completion resolves normally")
+check(profile.Wins == 0 and profile.Tags == 0 and profile.Coins >= 60, "solo pays completion coins without farming competitive win/tag stats")
+local before = h.metrics.snapshot()
+h.remote.OnServerEvent:Fire(player, "Playtest", { fps = 45, touch = true })
+h.remote.OnServerEvent:Fire(player, "Playtest", { fps = 240, touch = false })
+check(h.metrics.snapshot().samples == before.samples+1, "client performance reports are rate limited")
+h.remote.OnServerEvent:Fire(player, "Retry")
+h.tick(.2, true)
+check(replicated:GetAttribute("Phase") == "Intermission" and replicated:GetAttribute("Round") == 1, "Run Again enters the full next-match queue")
+local queueDeadline = replicated:GetAttribute("Deadline")
+h.remote.OnServerEvent:Fire(player, "Retry")
+h.tick(5, true)
+check(replicated:GetAttribute("Phase") == "Intermission" and replicated:GetAttribute("Deadline") == queueDeadline, "retry cannot bypass or restart the thirty-second queue")
+awaitPhase("Ready")
+check(profile.Crossings == 5 and replicated:GetAttribute("Round") == 2, "next run preserves earned progress")
+awaitPhase("Crossing")
+check(replicated:GetAttribute("Phase") == "Crossing", "queued run releases movement after Ready")
+root().CFrame = r.CFrame.new(root().Position.X, -11, root().Position.Z)
+h.tick(.1, false) h.tick(.2, true)
+check(replicated:GetAttribute("Phase") == "Results", "a solo fall resolves without waiting out the full run")
+local failedAt = h.now()
+awaitPhase("Crossing")
+check(h.now()-failedAt >= Config.Intermission+Config.ReadySeconds, "automatic solo retry also respects the thirty-second queue")
+check(h.metrics.snapshot().totals.retry == 2 and h.metrics.snapshot().falls[1] == 1, "reports distinguish retries and the course where a player fell")
+root().CFrame = r.CFrame.new(root().Position.X, -11, root().Position.Z)
+h.tick(.1, false) h.tick(.2, true)
+h.remote.OnServerEvent:Fire(player, "PauseSolo")
+check(player:GetAttribute("SoloPaused"), "results offer a solo lobby break")
+h.tick(2.1, true)
+check(replicated:GetAttribute("Phase") == "Intermission", "lobby choice cancels the next automatic retry")
+for _ = 1, 70 do h.tick(.2, true) end
+check(player:GetAttribute("Role") == "Spectator" and replicated:GetAttribute("Phase") == "Intermission", "paused player can stay in the lobby")
+h.remote.OnServerEvent:Fire(player, "Retry")
+awaitPhase("Crossing")
+check(replicated:GetAttribute("Phase") == "Crossing" and not player:GetAttribute("SoloPaused"), "Play resumes a paused solo session")
+print("PASS: " .. count .. " actual solo rewards, thirty-second queue, charge, landing and replay assertions")
